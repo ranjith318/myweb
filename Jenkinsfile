@@ -4,7 +4,7 @@ pipeline {
         stage('clone repository & clean') { 
             steps {
                 sh "rm -rf jenkins-maven"
-                sh "git clone https://github.com/ranjith318/jenkins-maven.git"
+                sh "git clone https://github.com/ranjith318/myweb.git"
                 sh "mvn clean -f jenkins-maven"
             }
         }
